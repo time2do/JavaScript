@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>or연산자를 이용한 조건문</title>
+</head>
+<body>
+    <script>
+        //or연산자를 사용해 50보다 작은 숫자 2개를 입력 받아 둘 중 하나가 10보다 작은지를 판단합니다.
+
+        var num1 = prompt("50미만의 숫자를 입력하세요");
+        var num2 = prompt("50미만의 숫자를 입력하세요");
+
+        if(num1 !== null && num2 !== null){
+        if( num1 < 10 || num2 < 10){
+            alert("숫자 2개 중에서 최소한 하나는 10 미만입니다.");
+         }
+        else{
+            alert("숫자 2개 중에서 10 미만의 수가 없습니다.")
+        }
+        }
+        else{
+        alert("숫자를 입력하세요")
+         }
+    </script>
+</body>
+</html>

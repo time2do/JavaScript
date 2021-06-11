@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 함수 prompt() 사용</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .accent{
+            font-size: 1.2em;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>어서오세요</h1>
+    <script>
+        // var name = "엘사";
+        var name = prompt("이름을 입력하세요", "Harry porter"); 
+        //파이썬에선 var 안 넣는다
+        //첫번째는 입력 창에서 띄워줄 메시지, 두번째는 입력 부분의 기본 값
+
+        document.write(name + "님 환영합니다.");
+        
+        document.write("<span class='accent'>" + name + "</span>님 환영합니다."); //변수에 문자 붙이면 안됨
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1부터 10 곱하기</title>
+</head>
+<body>
+    <h2>factorial (계승) 계산하기</h2>
+    <script>
+        //1부터 10까지 곱하기
+
+        var n = parseInt(prompt("숫자를 입력하세요"));  //숫자 입력시 parseInt 써야함
+        var facto = 1;   
+        var i ;
+
+        if( n !== null){ //숫자 오류 처리 - isNaN () 함수 사용
+        for(i=1; i<=n; i++ ){
+            facto = facto * i ;  //facto가 1x2, 1x2x3, 1x2x3x4 ... 1x2x3...xn
+           // 1 = 1 x 1
+           // 2 = 1 x 2
+           // 6 = 2 x 3
+           // 24 = 6 x 4 .....
+            console.log(facto);
+        }
+    
+        result = n+ "!=" + facto;
+        document.write(result);
+    }else{
+        document.write("입력이 취소되었습니다.");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 for (while 보다 자주 씀)</title>
+</head>
+<body>
+    <h2>for문 사용하기(범위 있을때)</h2>
+    <script>
+        //1부터 10까지 출력
+
+        var i;
+        var sum = 0;
+
+        for( i=1; i<11; i++){  //i는 1이고 11되기 전까지 더한다.
+
+             sum += i;  //i의 모든 값을 더한다.
+             console.log("i=" + i + ",sum=" + sum)
+
+        }
+        document.write("1부터 10의 합계는 " + sum + "입니다.")
+
+    </script>
+</body>
+</html>

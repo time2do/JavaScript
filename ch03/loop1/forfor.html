@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2중 for 조건문</title>
+</head>
+<body>
+    <h2>이중 for문 연습</h2>
+    <script>
+        //1행에 5열까지 '가'를 출력하기
+
+        for(var i =1; i<=5; i++){
+            document.write("가");
+        }
+            document.write("<br><br>")
+            
+        //5행 5열까지 '가'를 출력하기
+
+        for(var i =1; i<=5; i++){ //행
+            for(var j=1; j<=i; j++){  //열
+                document.write("가");
+            }
+            document.write("<br>")
+        }
+        document.write("<br>")
+
+
+        for(var i =1; i<=5; i++){ //행
+            for(var j=1; j<=5; j++){  //열
+                document.write("가");
+            }
+            document.write("<br>")
+        }
+        document.write("<br>")
+
+
+        for(var i =1; i<=5; i++){ //행
+            for(var j=i; j<=5; j++){  //열
+                document.write("가");
+            }
+            document.write("<br>")
+        }
+        document.write("<br>")
+
+    </script>
+</body>
+</html>

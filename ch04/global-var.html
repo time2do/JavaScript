@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역 변수의 유효 범위</title>
+</head>
+<body>
+    <h2>전역 변수의 유효 범위</h2>
+    <script>
+        var x = 1   //전역 변수
+            function oneUp(){
+                 x += 1;  
+                    return x;
+                }
+
+            var num = oneUp(); //x = 2, num = 2
+            var num = oneUp(); // x = 3, num = 3 (한번 더 호출 하면 위에 호출한거에 한번더 함수 적용됨)
+            var num = oneUp(); // x = 3, num = 4
+
+            document.write("num = " + num + "<br>");
+            document.write("x = " + x + "<br>");
+
+
+    </script>
+
+
+<!-- 전역변수는 많이 안씀, local많이 씀, 전역변수의 생존기간은 프로그램이 종료될때 소멸됨 -->
+</body>
+</html>
