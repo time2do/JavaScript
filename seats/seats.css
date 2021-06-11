@@ -1,0 +1,10 @@
+#container{
+    margin: 0 auto; text-align: center;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+td{ padding: 20px;
+    border: 1px solid rgb(255, 179, 64);
+}
