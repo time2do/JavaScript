@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book 객체 만들기</title>
+    <style>
+       
+        p{
+            border:1px solid #ccc; padding:10px; width: 200px; text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <script>
+        function Book(title,author,price){
+            this.title = title;
+            this.author = author;
+            this.price = price;
+        }
+        //book객체의 인스턴스 만들기
+
+        var html = new Book("웹 표준의 정석", "고경희", 30000);  //위에 순서 그대로 써야함
+        var python = new Book("점프 투 파이썬","박응용",20000)
+        var django = new Book("점프 투 장고","박응용",20000)
+
+        var bookList = [html,python,django];
+
+        //목록 조회
+        document.write("<h1>책 제목으로 살펴보기</h1><br>");
+
+        for(var i in bookList){
+            document.write("<p>" + bookList[i].title + "</p>");
+        }
+        
+
+        //document.write(html.title);
+
+    </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 예제</title>
+</head>
+<body>
+    <h2>배열(array)의 생성과 사용</h2>
+    <script>
+       var fruit = ['사과','딸기','바나나'];
+
+       document.write("fruit[2] 는" + fruit[2] + "<br>")
+
+       document.write("<br>");
+
+       //전체 조회
+       for(var i=0; i<fruit.length;i++){
+           document.write(fruit[i]+ "<br>");
+       }
+
+       document.write("<br>");
+
+       //딸기 -> 토마토
+       fruit[1] = "토마토";  //업데이트 시 사용
+
+       //전체 조회2 - for in 반복문(파이썬에서 많이 씀)
+       //for(var 변수이름 in 배열이름)
+       for(var i in fruit){
+           document.write(fruit[i]+ "<br>");
+       }
+
+    </script>
+</body>
+</html>

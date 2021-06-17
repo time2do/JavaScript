@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 최대값 구하기</title>
+</head>
+<body>
+    <script>
+        var nums = [17,53,77,4,91,60];
+        //최초값 변수 설정
+        var min = nums[0];
+
+        //비교 연산
+        for(var i = 1; i< nums.length;i++){  //var i =1 은 53,2는 77...
+            if(min > nums[i]){ 
+                min = nums[i];
+                //첫번째 min=17,nums[1]=53 17<53이기에 다음 min도 17
+                //두번째 min=17,nums[2]=77 17<77이기에 다음 min도 17
+                //세번째 min=17,nums[3]=4  17>4 이기에 다음 min은 4
+                //네번째 min=4, nums[4]=91 4<91 이기에 다음 min도 4
+                //다섯번째 min=4, nums[5]=60 4<60 이기에 최종 min은 4
+
+            }
+            console.log(min);
+        }
+        
+
+        document.write("최소값: " + min + "<br>")
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진 바꾸기</title>
+    <style>
+        #container{
+            width: 268px; margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <img src="images/cup-1.png" alt="컵1" onclick="changePic()" id="cup">
+    </div>
+    <script>
+        function changePic(){
+            document.querySelector("#cup").src = "images/cup-2.png";
+        }
+
+        //쿼리가 더 최근에 나온 도구이고, 조금 더 복잡하지만 더 강력한 기능을 가지고 있다.
+    </script>
+</body>
+</html>
